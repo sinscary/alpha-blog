@@ -11,6 +11,15 @@ get 'about', to: 'pages#about'
 
 resources :articles
 
+get 'signup', to: 'users#new'
+
+# 1. First way of setting route for creating new post
+  #post 'users', to: 'users#create'
+
+#2. The above post method can also be implemented in this way
+resources :users, except: [:new]
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
