@@ -19,6 +19,10 @@ get 'signup', to: 'users#new'
 #2. The above post method can also be implemented in this way
 resources :users, except: [:new]
 
+get 'login', to: 'sessions#new'
+post 'login', to: 'sessions#create'
+delete 'logout', to: 'sessions#destroy'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
