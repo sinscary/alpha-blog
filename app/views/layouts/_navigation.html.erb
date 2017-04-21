@@ -65,8 +65,8 @@
             </ul>
           </li>
           <% else %>
-            <li><%= link_to 'Log in', login_path %></li>
-            <li><%= link_to 'Sign up', signup_path, onclick: "ga('send', 'event', 'new', 'SignUp', '' );" %></li>
+            <li><%= link_to 'Log in', login_path, onclick: "ga('send', 'event', 'Account-Login', 'Login', '' );" %></li>
+            <li><%= link_to 'Sign up', signup_path, onclick: "ga('send', 'event', 'Account-New', 'SignUp', '' );" %></li>
           <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
