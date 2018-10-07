@@ -19,5 +19,8 @@ module AlphaBlog
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # See: https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SQLite3Adapter.html#method-c-represent_boolean_as_integer
+    config.active_record.sqlite3.represent_boolean_as_integer = true
   end
 end
