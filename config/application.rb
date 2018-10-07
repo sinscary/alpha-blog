@@ -20,7 +20,7 @@ module AlphaBlog
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    # See: https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SQLite3Adapter.html#method-c-represent_boolean_as_integer
+    config.active_record.sqlite3.represent_boolean_as_integer = true
   end
 end
