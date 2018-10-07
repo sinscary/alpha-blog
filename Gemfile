@@ -24,6 +24,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.7'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 1.0', group: :doc
+# Detect security vulnerabilities in gems
+gem 'bundler-audit', '~> 0.6.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
