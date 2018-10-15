@@ -24,3 +24,7 @@ Thanks @severinkaelin to upgrade it to rails 5.2
 
 Please raise a PR for any bug fix or new features or upgrades
 
+
+Requirements - 
+`rails 5.2.1`
+`ruby >= 2.4.2`
